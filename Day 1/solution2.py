@@ -1,4 +1,4 @@
-with open('data.txt', 'r') as DATAFILE:
+with open('Day 1/data.txt', 'r') as DATAFILE:
   DATA = DATAFILE.read().splitlines()
   increase_count = 0
   for x in range(len(DATA)):
