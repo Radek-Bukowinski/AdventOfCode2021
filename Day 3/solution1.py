@@ -6,6 +6,7 @@ with open('Day 3/data.txt', 'r') as DATAFILE:
   i = -1
   gamma = []
   epsilon = []
+
   def recursion(i):
     ones_count = 0
     zeros_count = 0
@@ -18,7 +19,7 @@ with open('Day 3/data.txt', 'r') as DATAFILE:
           zeros_count = zeros_count + 1
       except:
         print(current, i)
-      
+
     if(ones_count > zeros_count):
       #print('more ones')
       #print("1: " + str(ones_count))
@@ -29,10 +30,10 @@ with open('Day 3/data.txt', 'r') as DATAFILE:
       #print("0: " + str(zeros_count))
       gamma.append('0')
       epsilon.append('1')
-   
+
 for i in range(12):
   recursion(i)
-  
+
 
 gamma_str = ''.join(gamma)
 epsilon_str = ''.join(epsilon)
